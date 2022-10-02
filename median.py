@@ -5,6 +5,7 @@ while True:
     try:
         print("Enter a list of numbers separated by commas: ")
         numbers = [float(value) for value in input().split(",")]
+        numbers = numbers.sort()
         if len(numbers)%2 != 0:
             median = numbers[(len(numbers)//2)]
         else:
